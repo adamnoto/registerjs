@@ -1,0 +1,16 @@
+{
+  "name": "register",
+  "version": "1.0.0",
+  "description": "Reusable Register Pattern",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./tests"
+  },
+  "author": "= <=> (http://dots.tripisco.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "lodash": "^4.12.0",
+    "mocha": "^2.4.5"
+  }
+}
