@@ -1,5 +1,5 @@
 var expect = require("chai").expect;
-var Register = require('../index');
+var Register = require('../register');
 
 describe("Switch replacer", function() {
   var sayEn, sayId, greeterSwitch, greeterRegister;

@@ -1,6 +1,6 @@
 var expect = require('chai').expect;
 var lodash = require("lodash");
-var Register = require('../index');
+var Register = require('../register');
 
 describe("Register", function() {
   describe("initialize", function() {
