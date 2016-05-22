@@ -21,6 +21,8 @@ function Register(setters, defaultValue) {
   }
 }
 
+Register.globalName = 'Register'; // for UMD
+
 Register.prototype.toString = function() {
   return "[object Register]";
 }
@@ -75,4 +77,4 @@ Register.prototype.toObject = function() {
   return Object.assign({}, this._values);
 }
 
-module.exports = Register
+module.exports = Register;
