@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+
+   <head>
+      <title>Test Register</title>
+      <script src="../register_umd.js" type='text/javascript'></script>
+   </head>
+
+   <body>
+      <input type='text' id='name' placeholder='name' /><br/>
+      <input type='text' id='email', placeholder='email'><br/>
+      <button id='add'>Add to Register</button>
+
+      <script type='text/javascript'>
+        var addBtn = document.getElementById('add');
+        var register = new Register();
+        addBtn.addEventListener('click', function() {
+           var nameText = document.getElementById('name');
+           var emailText = document.getElementById('email');
+
+           var doc = {
+              name: nameText.value,
+              email: emailText.value
+           }
+
+           register.set(nameText.value, doc);
+           emailText.value = '';
+           nameText.value = '';
+
+           console.group("Register data");
+           console.log(register);
+           console.log(register.toObject());
+           console.groupEnd();
+        })
+      </script>
+   </body>
+
+</html>
