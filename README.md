@@ -11,6 +11,23 @@ An implementation of Register Pattern with small set of API that allows you to:
 - `values` return a set of all defined values.
 - `toObject` to convert the register into an object.
 
+## Install
+
+For UMD (universal, including Browser), download the `register_umd.js`. `Register`
+will be globally available. See implementation on `tests/test.html`.
+
+For node:
+
+```
+npm i @saveav/register
+```
+
+And require the package this way:
+
+```javascript
+var Register = require('@saveav/register');
+```
+
 ## Initialize
 
 ```javascript
