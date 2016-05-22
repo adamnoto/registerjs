@@ -1,5 +1,5 @@
 {
-  "name": "register",
+  "name": "@saveav/register",
   "version": "1.0.0",
   "description": "Reusable Register Pattern",
   "main": "register.js",
