@@ -4,6 +4,7 @@ An implementation of Register Pattern with small set of API that allows you to:
 
 - `set` a value to a key.
 - `get` a value associated to a key, if none, return the default value (by default set to `undefined`).
+- `delete` a key and its value.
 - `setDefault` value.
 - `getDefault` value.
 - `hasKey` to check if a key is defined.
@@ -49,6 +50,10 @@ var reg = new Register({name: undefined, locale: "en"}, {
 })
 
 reg.get("adam"); // => {name: "Adam", locale: "id"}
+
+reg.delete("adam");
+
+reg.get("adam"); // => {name: undefined, locale: "en"}
 ```
 
 ## Use-case
