@@ -35,11 +35,17 @@ Register.prototype.set = function(key, value) {
   return key;
 }
 
-Register.prototype.get = function(key, value) {
+Register.prototype.get = function(key) {
   if (Object.hasOwnProperty.call(this._values, key)) {
     return this._values[key];
   } else {
     return this._defaultValue;
+  }
+}
+
+Register.prototype.delete = function(key) {
+  if (Object.hasOwnProperty.call(this._values, key)) {
+    delete this._values[key];
   }
 }
 

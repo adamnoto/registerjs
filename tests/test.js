@@ -66,6 +66,17 @@ describe("Register", function() {
     })
   })
 
+  describe("#delete", function() {
+    it("can delete a key and its value", function() {
+      var reg = new Register();
+      expect(reg.get("name")).to.equal(undefined);
+      reg.set("name", "Adam");
+      expect(reg.get("name")).to.eq("Adam");
+      reg.delete("name");
+      expect(reg.get("name")).to.equal(undefined);
+    })
+  })
+
   describe("#setDefault", function() {
     it("can set the default value", function() {
       var reg = new Register(0);
